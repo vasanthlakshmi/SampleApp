@@ -1,0 +1,75 @@
+<form [formGroup]="addUserForm" >
+    <div class="textdiv">
+     
+      <h3>Register Form</h3>
+    </div>
+       
+  <!-- <p>
+    <mat-form-field appearance="outline">
+        <mat-label>EmpID</mat-label>
+        <input
+          matInput
+          formControlName="EmpID"
+          placeholder="Enter employee ID"
+        
+          style="text-transform: capitalize"
+        />
+    </mat-form-field> 
+  </p> -->
+   
+  <p>
+    <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input
+          matInput
+          formControlName="Name"
+          placeholder="Enter employee name"
+          required
+          style="text-transform: capitalize"
+        />
+    </mat-form-field> 
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+        <mat-label>Age</mat-label>
+        <input
+          matInput
+          formControlName="Age"
+          placeholder="Enter employee age"
+          required
+          style="text-transform: capitalize"
+        />
+    </mat-form-field> 
+  </p>
+<p>
+    <mat-form-field appearance="outline">
+        <mat-label>DateOfBirth</mat-label>
+        <input
+          matInput
+          formControlName="DateOfBirth"
+          placeholder="Enter date of birth"
+          required
+          style="text-transform: capitalize"
+        />
+    </mat-form-field> 
+</p>
+
+    <!-- <mat-form-field appearance="fill">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field> -->
+    <!-- <mat-form-field appearance="outline">
+        <mat-label>Start Date</mat-label>
+        <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker"  
+        placeholder="StartDate"
+        formControlName="StartDate">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field> -->
+      <button class="" mat-raised-button>create User</button>
+      <button (click)="router.navigate(['/list']);"  class="cancel-btn" mat-raised-button>Cancel</button>
+      </form>
+ 

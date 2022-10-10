@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: vasanthlakshmisampleapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vasanthlakshmisampleapp
+  template:
+    metadata:
+      labels:
+        app: vasanthlakshmisampleapp 
+    spec:
+      containers:
+        - name: vasanthlakshmisampleapp 
+          image: myangularappregistry.azurecr.io/vasanthlakshmisampleapp
+          ports:
+          - containerPort: 80
